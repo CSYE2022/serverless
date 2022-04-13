@@ -11,7 +11,7 @@ exports.emailVerification = async (event) => {
     const sns = event.Records[0].Sns;
     console.log(sns);
 
-    const message = JSON.parse(sns.MessageAttributes);
+    const message = sns.MessageAttributes;
 
     const to = message.email.Value;
     const token = message.token.Value;
