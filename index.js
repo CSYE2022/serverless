@@ -70,9 +70,9 @@ exports.emailVerification = async (event) => {
                 Html: {
                     Charset: "UTF-8",
                     Data: `<div><p>Hello ${to},</p>
-                    <p>Thank you for signing up to our services. We are happy to welcome you in the family.</p>
-                    <p>You are almost ready to enjoy the full experience. Simply click the below link to verify your e-mail address.</p>
-                    <p><a  href=\"http://${process.env.DomainName}.ebenezerwilliams.me/v1/verifyUserEmail?email=${to}&token=${token}\" target=\"_blank\">Click here to verify email</a></p>
+                    <p>Come get verified.</p>
+                    <p>Click on the link below.</p>
+                    <p><a  href=\"http://${process.env.DomainName}/v1/verifyUserEmail?email=${to}&token=${token}\" target=\"_blank\">Click here to verify email</a></p>
                     <p>Or paste the following link in a browser: </p>
                     <p>http://${process.env.DomainName}/v1/verifyUserEmail?email=${to}&token=${token} </p>
                     </div>`
