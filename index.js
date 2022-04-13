@@ -5,7 +5,7 @@ let dynamo = new AWS.DynamoDB({
     apiVersion: '2012-08-10'
 });
 
-exports.emailService = async (event) => {
+exports.emailVerification = async (event) => {
 
     console.log(event);
     const sns = event.Records[0].Sns;
