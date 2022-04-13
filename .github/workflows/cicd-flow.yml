@@ -35,4 +35,4 @@ jobs:
       #running aws cli lambda
       - name: AWS CLI lambda update
         run: |
-          aws lambda update-function-code --function-name EmailService --region us-east-1 --zip-file fileb://index.zip
+          aws lambda update-function-code --function-name EmailVerification --region us-east-1 --zip-file fileb://index.zip
