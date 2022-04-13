@@ -26,7 +26,7 @@ exports.emailVerification = async (event) => {
                 S: to
             }
         },
-        TableName: "emailTokenTbl"
+        TableName: "SentMails"
     }
 
     try {
@@ -46,7 +46,7 @@ exports.emailVerification = async (event) => {
                 S: to
             }
         },
-        TableName: "emailTokenTbl"
+        TableName: "SentMails"
     }
     try {
         let data = await dynamo.putItem(dynamoDBPutInputParams).promise();
