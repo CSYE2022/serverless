@@ -11,10 +11,10 @@ exports.emailVerification = async (event) => {
     const sns = event.Records[0].Sns;
     console.log(sns);
 
-    const message = JSON.parse(sns.Message);
+    const message = JSON.parse(sns.MessageAttributes);
 
-    const to = message.email;
-    const token = message.token;
+    const to = message.email.Value;
+    const token = message.token.Value;
 
     console.log("to", to);
     console.log("token", token);
