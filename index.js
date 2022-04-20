@@ -72,9 +72,9 @@ exports.emailVerification = async (event) => {
                     Data: `<div><p>Hello ${to},</p>
                     <p>Come get verified.</p>
                     <p>Click on the link below.</p>
-                    <p><a  href=\"http://${process.env.DomainName}/v1/verifyUserEmail?email=${to}&token=${token}\" target=\"_blank\">Click here to verify email</a></p>
+                    <p><a  href=\"https://${process.env.DomainName}/v1/verifyUserEmail?email=${to}&token=${token}\" target=\"_blank\">Click here to verify email</a></p>
                     <p>Or paste the following link in a browser: </p>
-                    <p>http://${process.env.DomainName}/v1/verifyUserEmail?email=${to}&token=${token} </p>
+                    <p>https://${process.env.DomainName}/v1/verifyUserEmail?email=${to}&token=${token} </p>
                     </div>`
                 }
             },
